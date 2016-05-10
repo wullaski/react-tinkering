@@ -21,13 +21,13 @@ class App extends React.Component {
 		return (
 			<div>
 				<Slider ref="red" update={this.update} />
-				{this.state.red}
+				<p>Red: {this.state.red}</p>
 				<br />
 				<Slider ref="green" update={this.update} />
-				{this.state.green}
+				<p>Green: {this.state.green}</p>
 				<br />
 				<Slider ref="blue" update={this.update} />
-				{this.state.blue}
+				<p>Blue: {this.state.blue}</p>
 				<br />
 			</div>
 		)

@@ -20,15 +20,20 @@ class App extends React.Component {
 	render() {
 		return (
 			<div>
-				<Slider ref="red" update={this.update} />
-				<p>Red: {this.state.red}</p>
-				<br />
-				<Slider ref="green" update={this.update} />
-				<p>Green: {this.state.green}</p>
-				<br />
-				<Slider ref="blue" update={this.update} />
-				<p>Blue: {this.state.blue}</p>
-				<br />
+				<div>
+					<Slider ref="red" update={this.update} />
+					<p>Red: {this.state.red}</p>
+					<br />
+					<Slider ref="green" update={this.update} />
+					<p>Green: {this.state.green}</p>
+					<br />
+					<Slider ref="blue" update={this.update} />
+					<p>Blue: {this.state.blue}</p>
+				</div>
+				<hr />
+				<div>
+					<input type="text" />
+				</div>
 			</div>
 		)
 	}

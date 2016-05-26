@@ -69,3 +69,53 @@ ReactDOM.render(
 	<App />,
 	document.getElementById('app')
 );
+
+
+
+// ============================================================================
+
+class Second extends React.Component {
+	render() {
+		return (
+			<div>
+				<Button>I <Heart /> React</Button>
+			</div>
+		)
+	}
+}
+
+class Button extends React.Component {
+	render() {
+		return <button>{this.props.children}</button>
+	}
+}
+
+const Heart = () => <span className="glyphicon glyphicon-heart"></span>
+
+ReactDOM.render(
+	<Second />,
+	document.getElementById('second')
+);
+
+
+
+// ============================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

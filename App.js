@@ -70,6 +70,7 @@ ReactDOM.render(
 );
 
 
+
 // ============================================================================
 
 class Second extends React.Component {
@@ -127,7 +128,6 @@ class Third extends React.Component {
 }
 
 Third.defaultProps = { val: 0 }
-
 
 ReactDOM.render(
   <Third />,
